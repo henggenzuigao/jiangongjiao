@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@color/white"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/aty_custombuspassengerinfo_ren"/>
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:text="张xx"
+        android:textColor="@color/comon_text_black_most"
+        android:textSize="12dp"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/tv_idcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_name"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="5dp"
+        android:text="(210802199678987654)"
+        android:textSize="13dp"
+        android:textColor="@color/comon_text_black_normal"/>
+    <TextView
+        android:id="@+id/tv_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:textColor="@color/comon_text_black_most"
+        android:textSize="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/tv_name"/>
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:textColor="@color/comon_text_black_most"
+        android:textSize="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/tv_sex"/>
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/aty_custombuspassengerinfo_delete"
+        android:layout_centerVertical="true"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/common_line_gray_twopx"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

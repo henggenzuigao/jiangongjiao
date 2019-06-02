@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color>
+    <color name="transparency">#00000000</color>
+
+    <color name="app_theme">#32bcf9</color>
+    <color name="common_background_gray">#f5f5f5</color>
+    <color name="common_line_gray_onepx">#e3e3e3</color>
+    <color name="common_line_gray_twopx">#efefef</color>
+    <color name="common_line_gray_vertical">#dbdbdb</color>
+    <color name="comon_text_black_most">#333333</color>
+    <color name="comon_text_black_normal">#666666</color>
+    <color name="comon_text_black_less">#999999</color>
+    <color name="input_editext_hinit">#c6c6c6</color>
+
+    <!--我的钱包页面-->
+    <color name="aty_mypurse_oval_notransparency_13">#21ffffff</color>
+    <color name="aty_mypurse_oval_notransparency_15">#26ffffff</color>
+
+    <!--钱包充值页面-->
+    <color name="aty_paypurse_"></color>
+    <color name="aty_paypurse_usepromt">#f6805c</color>
+
+
+    <!--消费记录页面-->
+    <color name="aty_consumerecords_item_money_recharge">#f6a00b</color>
+
+
+    <!--二维码显示页面-->
+    <color name="frg_qrcodeshow_qrcodecardnum_background">#daf2ff</color>
+    <color name="frg_qrcodeshow_refresh">#c7c7c7</color>
+
+    <!--登录页面-->
+    <color name="aty_login_getvertifycode_gray">#d7d7d7</color>
+    <color name="aty_login_notinputphone_button">#9cdffc</color>
+
+    <!--老年卡退款页面-->
+    <color name="frg_seniorcardrefund_refund_balance">#f6a00b</color>
+
+    <!--定制公交相关页面-->
+    <color name="aty_custombus_dotgreen">#3ee096</color>
+    <color name="aty_custombus_selectfrequency_busdescriptionpromt">#f9be71</color>
+    <color name="aty_custombus_orderinfo_ticketsnumpromt">#f9be71</color>
+    <!--定制公交搜索站点与车牌号页面-->
+    <color name="aty_custombus_searchbusline_edittexthinit">#dbdbdb</color>
+    <color name="aty_custombus_searchbusline_itembluecard">#eff9fe</color>
+    <color name="aty_custombus_ticketinfo_infopromt">#eaf9ff</color>
+</resources>

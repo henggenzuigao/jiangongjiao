@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="327dp"
+        android:orientation="vertical"
+        android:background="@drawable/aty_custombustotal_background">
+        <include layout="@layout/layout_titlebar"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_tocustombusline"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/shape_aty_custombustotal_whitecard">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/aty_custombustotal_tocustombusline"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/comon_text_black_most"
+            android:text="@string/custombustotal_tocustombusline"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="32dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_toquerytickets"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_aty_custombustotal_whitecard"
+        android:layout_below="@id/rl_tocustombusline"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/aty_custombustotal_toquerytickets"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/comon_text_black_most"
+            android:text="@string/custombustotal_toquerytickets"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="32dp"/>
+    </RelativeLayout>
+</RelativeLayout>

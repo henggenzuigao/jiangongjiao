@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_commonwhitecard"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <TextView
+            android:id="@+id/tv_buslineandsite"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+            android:textColor="@color/comon_text_black_most"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/dash_line_small"
+            android:layerType="software" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_frequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/custombusquerytickets_frequency"
+                android:textColor="@color/comon_text_black_normal"
+                android:textSize="12dp"
+                android:layout_marginTop="13dp"
+                android:drawablePadding="7dp"
+                android:drawableLeft="@drawable/aty_custombus_queryticket_frequency"/>
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/custombusquerytickets_date"
+                android:textColor="@color/comon_text_black_normal"
+                android:textSize="12dp"
+                android:layout_marginTop="13dp"
+                android:layout_below="@id/tv_frequency"
+                android:layout_marginBottom="13dp"
+                android:drawablePadding="7dp"
+                android:drawableLeft="@drawable/aty_custombus_querytickets_date"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_alignBottom="@id/tv_date"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/app_theme"
+                android:text="@string/custombusquerytickets_checkmoreinfo"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

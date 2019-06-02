@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center_horizontal">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/frg_cloudrechargecard_success"
+        android:layout_marginTop="80dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/comon_text_black_most"
+        android:text="@string/cloudrecharge_success_promot1"
+        android:layout_marginTop="23dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:textColor="@color/comon_text_black_normal"
+        android:text="@string/cloudrecharge_success_promot2"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/btn_submit_success"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:text="@string/cloudrecharge_success_successbtn"
+        android:background="@drawable/shape_common_appthmebutton"
+        android:layout_marginTop="60dp"
+        style="?android:attr/borderlessButtonStyle"/>
+</LinearLayout>

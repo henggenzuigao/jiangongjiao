@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#00000000"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="342dp"
+        android:layout_width="268dp"
+        android:background="@drawable/shape_aty_whitecard"
+        android:layout_centerInParent="true"
+        android:id="@+id/alert_close">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/custombustotal_ticketnotice_title"
+            android:gravity="center"
+            android:drawablePadding="3dp"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/layout_dialog_custombusticketnotice_titleleft"
+            android:textColor="@color/comon_text_black_most"/>
+        <WebView
+            android:id="@+id/wv_agreement"
+            android:layout_width="199dp"
+            android:layout_height="179dp"
+            android:layout_gravity="center_horizontal"></WebView>
+        <ImageView
+            android:id="@+id/iv_info"
+            android:layout_width="199dp"
+            android:layout_height="179dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layout_dialog_custombusticketnotice_dashed"/>
+        <CheckBox
+            android:id="@+id/cb_agree_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/custombustotal_ticketnotice_promt"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/app_theme"
+            android:layout_margin="10dp"
+            android:checked="true"
+            android:textSize="14dp"
+            android:button="@drawable/custombus_ticketnotice_checkbox"
+            android:background="@null"
+            android:paddingLeft="5dp"/>
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:background="@drawable/layout_dialog_custombusticketnotice_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/app_true"
+            android:textColor="@color/white"
+            android:textSize="13dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <include layout="@layout/layout_titlebar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/app_theme"/>
+        <include layout="@layout/layout_custombus_orderinfo_whitecard" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_siteinfo"
+            android:layout_marginBottom="54dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_frequency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="13dp"
+                    android:textColor="@color/comon_text_black_most" />
+                <include layout="@layout/layout_custombus_order_frequencyanddate"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@color/common_background_gray"/>
+                <TextView
+                    android:id="@+id/tv_selectlayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:textSize="13dp"
+                    android:textColor="@color/comon_text_black_most"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="17dp"
+                    android:text="@string/custombusorderinfo_selectlayer"/>
+                <GridView
+                    android:id="@+id/gv_layernum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:numColumns="4"
+                    android:verticalSpacing="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginTop="14dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp">
+                    <TextView
+                        android:id="@+id/tv_ticketsnuminfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13dp"
+                        android:textColor="@color/comon_text_black_most"
+                        android:gravity="center_vertical"
+                        android:text="@string/custombusorderinfo_selectticketsnum"/>
+                    <TextView
+                        android:id="@+id/tv_ticketsnumpromt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/aty_custombusorderinfo_ticketsnumpromt"
+                        android:layout_toRightOf="@id/tv_ticketsnuminfo"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="11dp"
+                        android:drawablePadding="3dp"
+                        android:textSize="13dp"
+                        android:textColor="@color/aty_custombus_orderinfo_ticketsnumpromt"
+                        android:text="@string/custombusorderinfo_selectticketsnumpromt"/>
+                    <include layout="@layout/layout_custombusorderinfo_selectticketsnum"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@color/common_background_gray"/>
+                <TextView
+                    android:id="@+id/tv_preferential"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:textSize="13dp"
+                    android:textColor="@color/comon_text_black_most"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="17dp"
+                    android:text="优惠方式"/>
+                <View
+                    android:id="@+id/v_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/common_line_gray_twopx"/>
+                <RelativeLayout
+                    android:id="@+id/rl_huimincard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/aty_custombusorderinfo_huimincard"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/comon_text_black_most"
+                        android:textSize="14dp"
+                        android:text="@string/custombusorderinfo_huimincardinfo"
+                        android:drawablePadding="9dp"/>
+                    <CheckBox
+                        android:id="@+id/cb_huimincard"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_marginRight="20dp"
+                        android:checked="false"
+                        android:button="@drawable/aty_custombusorderinfo_huimincard_selector"
+                        android:layout_alignParentRight="true"
+                        android:background="@null" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/common_line_gray_onepx"
+            android:layout_above="@id/ll_bottom"/>
+
+        <include layout="@layout/layout_custombus_orderinfo_bottom"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

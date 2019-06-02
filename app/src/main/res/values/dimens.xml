@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--公共值-->
+    <dimen name="common_title_height">50dp</dimen>
+    <dimen name="common_title_text_size">18dp</dimen>
+    <dimen name="common_title_text_more_size">13dp</dimen>
+
+    <!--我的钱包页面-->
+    <dimen name="aty_mypurse_notranspanrency13_circle_width">180dp</dimen>
+    <dimen name="aty_mypurse_notranspanrency15_circle_width">160dp</dimen>
+    <dimen name="aty_mypurse_notranspanrency_margintop">30dp</dimen>
+    <dimen name="aty_mypurse_nextbutton_radius">5dp</dimen>
+    <dimen name="aty_common_nextbutton_width">310dp</dimen>
+    <dimen name="aty_common_nextbutton_height">43dp</dimen>
+    <dimen name="aty_mypurse_nextbutton_margintop">69dp</dimen>
+    <dimen name="aty_common_nextbutton_textsize">16dp</dimen>
+    <dimen name="aty_mypurse_balance_textsize">43dp</dimen>
+    <dimen name="aty_mypurse_balance_remark_textsize">14dp</dimen>
+
+
+    <!--钱包充值页面-->
+    <dimen name="aty_paypurse_submitbutton_textsize">15dp</dimen>
+    <dimen name="aty_paypurse_submitbutton_height">53dp</dimen>
+
+    <!--消费订单页面-->
+    <dimen name="aty_consumrecords_item_nomoretextheight">90dp</dimen>
+
+
+</resources>

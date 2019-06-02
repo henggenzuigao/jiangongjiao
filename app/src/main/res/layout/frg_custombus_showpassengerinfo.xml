@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.whpe.qrcode.jiangxi_jian.view.listener.NestListView
+                android:id="@+id/lv_passengerinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"></com.whpe.qrcode.jiangxi_jian.view.listener.NestListView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="62dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/custombuspassengerinfo_add"
+                    android:textColor="@color/app_theme"
+                    android:textSize="15dp"
+                    android:drawablePadding="7dp"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/aty_passengerinfo_add_appthme"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/aty_custombus_passengerinfo_button"
+                android:layout_marginTop="67dp"
+                android:layout_marginBottom="67dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/app_true"
+                android:textSize="15dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

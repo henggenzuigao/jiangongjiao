@@ -1,0 +1,155 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 苹果风格弹框 -->
+    <style name="AlertDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style parent="android:style/Theme.Dialog" name="normal_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+
+
+    <!-- 使用帮助页面标题字风格 -->
+    <style name="usehelp_q_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">41dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/comon_text_black_most</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">14dp</item>
+    </style>
+    <!-- 使用帮助页面答案背景风格 -->
+    <style name="usehelp_answer_background_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">17dp</item>
+        <item name="android:background">@color/common_background_gray</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingRight">14dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="usehelp_answertext_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+        <item name="android:layout_marginBottom">14dp</item>
+        <item name="android:textColor">@color/comon_text_black_normal</item>
+        <item name="android:textSize">11dp</item>
+    </style>
+
+    <!--登录等输入框风格-->
+    <style name="input_editext_hinit_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">number</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/comon_text_black_most</item>
+        <item name="android:textColorHint">@color/input_editext_hinit</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <!--登录等输入框风格(文字)-->
+    <style name="input_editext_hinit_style_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">text</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/comon_text_black_most</item>
+        <item name="android:textColorHint">@color/input_editext_hinit</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <!--home首页tab风格-->
+    <style name="frg_home_tab_style">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--老年卡退款输入框相关-->
+    <style name="frg_seniorcardrefund_linear">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:paddingLeft">13dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="frg_seniorcardrefund_text">
+        <item name="android:layout_width">68dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/comon_text_black_most</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+    <style name="frg_seniorcardrefund_edittext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/comon_text_black_most</item>
+        <item name="android:layout_marginLeft">14dp</item>
+        <item name="android:textColorHint">@color/input_editext_hinit</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">text</item>
+        <item name="android:digits">0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</item>
+    </style>
+
+
+    <!--多通用圆角底部按钮提交-->
+    <style name="common_submit_shape_button">
+        <item name="android:layout_width">@dimen/aty_common_nextbutton_width</item>
+        <item name="android:layout_height">@dimen/aty_common_nextbutton_height</item>
+        <item name="android:background">@drawable/shape_aty_common_nextbutton</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/aty_common_nextbutton_textsize</item>
+        <!--<item name="style">?android:attr/borderlessButtonStyle</item>-->
+    </style>
+
+    <style name="aty_custombusticketinfo_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/comon_text_black_most</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <style parent="android:style/Theme.Dialog" name="agreement_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/transpant_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+
+</resources>

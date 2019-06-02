@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_qrcodeshow"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:id="@+id/tv_qrcode_cardnum"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="@drawable/shape_frg_qrcode_cardnum"
+            android:textSize="16dp"
+            android:textColor="@color/comon_text_black_most"
+            android:gravity="center"></TextView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <ImageView
+                android:id="@+id/iv_qrcode"
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp" />
+            <TextView
+                android:id="@+id/tv_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_qrcode"
+                android:textColor="@color/frg_qrcodeshow_refresh"
+                android:textSize="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="14dp"
+                android:text="@string/frg_qrcode_is_refresh"
+                android:drawableLeft="@drawable/frg_qrcode_isrefresh"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="5dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/frg_qrcode_center_dashline">
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="2dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/dash_line_small"
+                android:layerType="software"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_frg_qrcode_paytype"
+            android:paddingTop="18dp"
+            android:paddingBottom="26dp">
+            <TextView
+                android:id="@+id/tv_qrcode_paytype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/comon_text_black_most"
+                android:textSize="15dp"
+                android:text="@string/frg_qrcode_paytypelater_mypurse"
+                android:drawableLeft="@drawable/frg_qrcode_paytype_purse"
+                android:drawablePadding="6dp"
+                android:clickable="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!--<TextView
+        android:id="@+id/tv_topaypurse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/frg_qrcode_topay"
+        android:textColor="@color/white"
+        android:layout_below="@id/ll_qrcodeshow"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="14dp"/>-->
+</RelativeLayout>

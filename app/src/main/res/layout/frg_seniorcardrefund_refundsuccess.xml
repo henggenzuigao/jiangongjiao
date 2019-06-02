@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center_horizontal">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/frg_seniorcardrefund_refundsuccess_success"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/comon_text_black_most"
+        android:text="@string/seniorcardrefund_refundsuccess_success"
+        android:layout_marginTop="23dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:textColor="@color/comon_text_black_normal"
+        android:text="@string/seniorcardrefund_refundsuccess_remark"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/btn_submit"
+        android:text="@string/app_back"
+        android:layout_width="@dimen/aty_common_nextbutton_width"
+        android:layout_height="@dimen/aty_common_nextbutton_height"
+        android:background="@drawable/shape_aty_common_nextbutton"
+        android:layout_marginTop="69dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/aty_common_nextbutton_textsize"
+        style="?android:attr/borderlessButtonStyle"/>
+</LinearLayout>

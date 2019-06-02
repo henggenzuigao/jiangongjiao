@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.whpe.qrcode.jiangxi_jian"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 5
+        versionName "2.1.5"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    //签名
+    signingConfigs {
+        debug {
+        }
+        release {
+            storeFile file("D:\\Projects\\android_studio\\apk_lic")
+            storePassword "tomyang123"
+            keyAlias "apk_lic"
+            keyPassword "tomyang123"
+        }
+    }
+    buildTypes {
+        release {
+            zipAlignEnabled true //资源按4字节对齐，减少应用在运行时的内存消耗
+            signingConfig signingConfigs.release
+
+            //启用代码混淆
+            minifyEnabled true
+            //混淆规则配置文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            //shrinkResources true
+            applicationVariants.all { variant ->
+                variant.outputs.all { output ->
+                    def date = new Date()
+                    def formattedDate = date.format('yyyyMMdd')
+                    def fileName
+                    fileName = "${formattedDate}_${defaultConfig.versionName}_jiangongjiao_${defaultConfig.versionCode}.apk"
+                    outputFileName = fileName
+                }
+            }
+        }
+    }
+    buildToolsVersion '26.0.2'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.github.gittjy:LoadingDialog:1.0.2'
+    implementation 'de.hdodenhof:circleimageview:2.0.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.7.0'
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.7.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.4.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.2'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jre7:1.1.0'
+    implementation 'com.google.zxing:core:+'
+    implementation files('libs/commons-lang3-3.1.jar')
+    implementation files('libs/SeniorCardRefund.jar.jar')
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation files('libs/UPPayPluginExPro.jar')
+    implementation files('libs/UPPayAssistEx.jar')
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.github.LinweiJ:ViewPagerIndicator:0.1.0'
+    // 添加下面的内容
+    implementation(name: 'alipaySdk-15.5.9-20181123210601', ext: 'aar')
+    implementation files('libs/AppServe_JiangXiJiAn.jar')
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="14dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_frg_studentcardsearch_whitecard">
+        <!--<de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:civ_border_width="12dp"
+            app:civ_border_color="#7affffff"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:elevation="20dp"
+            android:src="@drawable/frg_studentcardsearch_result_itemlogo" />-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frg_studentcardsearch_result_itemlogo"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/app_theme"
+            android:textSize="16dp"
+            android:text="@string/studentcard_search_result_itemtitle"
+            android:layout_gravity="center_horizontal"/>
+        <include layout="@layout/layout_studentcardinfo_item1"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/dash_line_small"
+            android:layerType="software"/>
+        <include layout="@layout/layout_studentcardinfo_item2"/>
+        <include layout="@layout/layout_studentcardinfo_item3"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/dash_line_small"
+            android:layerType="software"/>
+        <TextView
+            android:id="@+id/tv_spreadandshrink"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/app_theme"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:clickable="true"
+            android:text="@string/studentcard_search_result_itemspread"/>
+    </LinearLayout>
+</RelativeLayout>
+
+

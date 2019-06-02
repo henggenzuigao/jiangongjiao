@@ -1,0 +1,329 @@
+<resources>
+    <string name="data_password">12345ssdlhlhbcfzcdhd</string>
+    <string name="app_name">吉安公交服务<!--(测试版不能外流)--></string>
+    <string name="app_alertdialog_title">系统提示</string>
+    <string name="app_alertdialog_exception_msg">系统异常</string>
+    <string name="app_request_exception_msg">请求失败</string>
+    <string name="app_request_exception_code">-1</string>
+    <string name="app_no_permission">请在设置-应用-吉安公交服务-权限中开启读写存储权限，以正常使用app功能</string>
+    <string name="app_loading_qrparam_false">参数预加载失败</string>
+    <string name="app_function_notopen">功能暂未开通</string>
+    <string name="app_notnet">网络未连接</string>
+    <string name="app_submit">提交</string>
+    <string name="app_true">确定</string>
+    <string name="app_back">返回</string>
+    <string name="app_rmb">¥</string>
+    <string name="app_years">年</string>
+    <string name="app_month">月</string>
+    <string name="app_man">男</string>
+    <string name="app_women">女</string>
+
+
+    <!--主页activity-->
+    <string name="aty_main_home">首页</string>
+    <string name="aty_main_myself">我的</string>
+    <string name="calls_phone">0796-8225550</string>
+
+
+
+    <!--我的钱包页面-->
+    <string name="mypurse_title">我的钱包</string>
+    <string name="mypurse_balance_remarks">可用余额(元)</string>
+    <string name="mypurse_nextbutton_text">立即充值</string>
+
+
+
+    <!--充值钱包页面-->
+    <string name="paypurse_title">钱包充值</string>
+    <string name="paypurse_btntext">确认充值¥%1$.2f</string>
+    <string name="paypurse_btntext_default">确认充值¥</string>
+    <string name="paypurse_balance_remarks">可用余额(元)</string>
+    <string name="paypurse_money_remarks">充值金额</string>
+    <string name="paypurse_noselect_money_toast">请选择充值金额</string>
+    <string name="paypurse_usepromt">说明:试运营期间服务费减免</string>
+
+    <!--消费记录-->
+    <string name="consumrecords_title">消费账单</string>
+    <string name="consumrecords_type_recharge">充值记录</string>
+    <string name="consumrecords_type_consum">消费记录</string>
+    <string name="consumrecords_type_item_recharge">钱包充值</string>
+    <string name="consumrecords_type_item_deposit">押金缴费</string>
+    <string name="consumrecords_type_item_rechargecard">实体卡充值</string>
+    <string name="consumrecords_type_item_custombus">定制公交</string>
+    <string name="consumrecords_type_item_consum">乘车刷码</string>
+    <string name="consumrecords_item_nomore">没有更多数据了~</string>
+    <string name="consumrecords_orderrechargetype_weichat">微信支付</string>
+    <string name="consumrecords_consumetype_purse">钱包支付</string>
+    <string name="consumrecords_consumetype_common">消费金额</string>
+    <string name="consumrecords_orderrechargetype_common">金额</string>
+
+
+    <!--设置-->
+    <string name="settings_title">设置</string>
+    <string name="settings_city">当前城市</string>
+    <string name="settings_city_info">吉安</string>
+    <string name="settings_version">版本号</string>
+    <string name="settings_clean_cache_size_format">共清理%1$.2fM缓存</string>
+    <string name="settings_cache_size_format">%1$.2fM</string>
+    <string name="settings_nomore_cache">没有缓存可以清理</string>
+    <string name="settings_update">更新app版本</string>
+    <string name="settings_havenewversion">有最新的app版本是否下载</string>
+    <string name="settings_nothavenewversion">当前版本已经是最新版本</string>
+
+
+    <!--我的页面-->
+    <string name="myself_tab_mypurse">我的钱包</string>
+    <string name="myself_tab_deposit">消费账单</string>
+    <string name="myself_tab_usehelp">使用帮助</string>
+    <string name="myself_tab_calls">联系客服</string>
+    <string name="myself_tab_aboutus">关于我们</string>
+    <string name="myself_tab_settings">设置</string>
+    <string name="myself_pleaselogin">请登录</string>
+
+    <!--自动更新-->
+    <string name="update_tv_dowanload">正在更新%1$d％</string>
+
+
+
+
+
+    <!--二维码总页面-->
+    <string name="activtiy_qrcode_title">刷码乘车</string>
+    <string name="frg_qrcode_cardnum">卡号:</string>
+    <string name="activity_qrcode_qrcard_exception">二维码状态异常</string>
+    <string name="activity_qrcode_function_notopen">功能暂未开通</string>
+
+    <!--二维码显示小页面-->
+    <string name="frg_qrcode_please_refresh">请点击二维码刷新</string>
+    <string name="frg_qrcode_is_refresh">已刷新</string>
+    <string name="frg_qrcode_paytypelater_mypurse">我的钱包</string>
+    <string name="frg_qrcode_topay">去充值</string>
+
+    <!--二维码问题小页面各种情况-->
+    <string name="frg_qrcodeexception_textinfo_notopen">当前账户未开通该功能，申请开通才能使用</string>
+    <string name="frg_qrcodeexception_textinfo_balancecantuse">当前账户余额不足，请充值至余额大于</string>
+    <string name="frg_qrcodeexception_textinfo_arrear">当前账户已经欠费，请补缴</string>
+    <string name="frg_qrcodeexception_textinfo_deposit">当前账户未交押金，请交付押金</string>
+    <string name="frg_qrcodeexception_textinfo_notbindpaytype">当前账户未绑定支付方式，请至少绑定一种以上支付方式</string>
+
+    <string name="frg_qrcodeexception_buttoninfo_notopen">立即开通</string>
+    <string name="frg_qrcodeexception_buttoninfo_balancecantuse">立即充值</string>
+    <string name="frg_qrcodeexception_buttoninfo_arrear">立即补缴欠费</string>
+    <string name="frg_qrcodeexception_buttoninfo_deposit">立即交付押金</string>
+    <string name="frg_qrcodeexception_buttoninfo_notbindpaytype">立即绑定</string>
+
+    <string name="frg_qrcodeexception_opensuccess">二维码电子卡开通成功</string>
+    <string name="frg_qrcodeexception_openfaild">二维码电子卡开通失败</string>
+
+
+
+
+
+    <!--使用帮助页面-->
+    <string name="usehelp_title">使用帮助</string>
+    <string name="usehelp_Q_1">Q：如何开通刷码功能？</string>
+    <string name="usehelp_a_1_1">进入刷码页面，如果有已经绑定的支付方式则可以直接刷码使用，如果没有绑定任何支付方式则进入绑定支付方式页面。</string>
+    <string name="usehelp_a_1_2">进入刷码页面，如果有已经绑</string>
+    <string name="usehelp_a_1_3">进入刷码页面，如果有已经绑定的支付方式则可以直接刷码使用，如果没有绑定任何支付方式则进入绑定支付方式页面。</string>
+    <string name="usehelp_Q_2">Q：如何开通刷码功能？</string>
+    <string name="usehelp_a_2_1">进入刷码页面，如果有已经绑定的支付方式则可以直接刷码使用，如果没有绑定任何支付方式则进入绑定支付方式页面。</string>
+    <string name="usehelp_a_2_2">进入刷码页面，如果有已经绑定的支付方式则可以</string>
+    <string name="usehelp_a_2_3">进入刷码页面，如果有已经绑定的支付方式则可以直接刷码使用，如果没有绑定任何支付方式则进入绑定支付方式页面。</string>
+    <string name="usehelp_Q_3">Q：如何开通刷码功能？</string>
+    <string name="usehelp_a_3_1">进入刷码页面，如果有已经绑定的</string>
+    <string name="usehelp_a_3_2">进入刷码页面，如果有已经绑定的支付方式则可以直</string>
+    <string name="usehelp_a_3_3">进入刷码页面，如果有已经绑定的支付</string>
+
+
+    <!--快捷登录-->
+    <string name="login_bigtitle">快捷登录</string>
+    <string name="login_getvertify">获取验证码</string>
+    <string name="login_getvertify_again">重新获取验证码</string>
+    <string name="login_after_getvertify">秒后可重新发送</string>
+    <string name="login_please_inputphone">请输入手机号码</string>
+    <string name="login_please_inputvertify">请输入验证码</string>
+    <string name="login_login">登录</string>
+    <string name="login_promt_notinputinfo">手机号与验证码都不能为空</string>
+    <string name="login_promt_notinputphone">手机号不能为空</string>
+    <string name="login_promt_phoneform_error">手机号格式错误</string>
+    <string name="login_promt_vertifyform_error">验证码格式错误</string>
+    <string name="login_sendsms_true">请求验证码发送成功</string>
+    <string name="login_sendsms_false">请求验证码发送失败</string>
+    <string name="login_login_false">登录失败</string>
+
+
+    <!--支付下单html页面-->
+    <string name="payhtml_title">支付</string>
+
+
+    <!--老年卡退审页面-->
+    <string name="seniorcardrefund_title_querybalance">老年卡余额查询</string>
+    <string name="seniorcardrefund_title_refund">老年卡退款</string>
+    <string name="seniorcardrefund_title_refundsuccess">老年卡退款状态</string>
+    <string name="seniorcardrefund_querybalance_remarks">注:老年卡退余额，仅退充值部分，赠送部分不退！</string>
+    <string name="seniorcardrefund_querybalance_idcard">身份证号</string>
+    <string name="seniorcardrefund_querybalance_idcard_hint">请输入身份证号</string>
+    <string name="seniorcardrefund_querybalance_seniorcard">IC卡号</string>
+    <string name="seniorcardrefund_querybalance_seniorcard_hint">请输入老年卡卡号</string>
+    <string name="seniorcardrefund_querybalance_inputerror">身份证号与老年卡卡号不能为空</string>
+    <string name="seniorcardrefund_refund_canreturnbalance">可退余额：</string>
+    <string name="seniorcardrefund_refund_balance">¥%s</string>
+    <string name="seniorcardrefund_refund_seniorcard">NO.%s</string>
+    <string name="seniorcardrefund_refund_bankcard">银行卡号</string>
+    <string name="seniorcardrefund_refund_bankcard_hint">请输入银行卡号</string>
+    <string name="seniorcardrefund_refund_bankcard_hint_again">请再次输入银行卡号</string>
+    <string name="seniorcardrefund_refund_remarks_title">温馨提示：</string>
+    <string name="seniorcardrefund_refund_remarks_info1">1.老年卡退余额，仅退充值部分，赠送金额不退。</string>
+    <string name="seniorcardrefund_refund_remarks_info2">2.当前线上退款仅支持工行银行卡客户。</string>
+    <string name="seniorcardrefund_refund_inputnull">银行卡号不能为空</string>
+    <string name="seniorcardrefund_refund_inputerror">两次输入银行卡号不一致</string>
+    <string name="seniorcardrefund_refundsuccess_success">提交成功</string>
+    <string name="seniorcardrefund_refundsuccess_remark">请稍后检查对应的账号</string>
+
+
+    <string name="aboutus_title">关于我们</string>
+    <string name="aboutus_txt">吉安定制公交APP是吉安公交推出的二维码乘车APP，提供公交扫码乘车服务</string>
+    <string name="aboutus_phonetitle">公交热线</string>
+    <string name="aboutus_phone">0796-8225550</string>
+    <!--<string name="aboutus_weburltitle">公司官网</string>
+    <string name="aboutus_weburl">www.puyangbus.com</string>
+    <string name="aboutus_bootomtxt">版权归濮阳市众意公共交通有限公司所有</string>-->
+
+    <string name="aty_busmap_title">公交地图</string>
+
+
+    <!--云充页面-->
+    <string name="cloudrecharge_title">卡片云充</string>
+    <string name="cloudrecharge_mark_frgCloudRechargeCardTopay">frgCloudRechargeCardTopay</string>
+    <string name="cloudrecharge_mark_frgCloudRechargeCardSuccess">frgCloudRechargeCardSuccess</string>
+    <string name="cloudrecharge_havepay_yes">1</string>
+    <string name="cloudrecharge_havepay_no">0</string>
+
+    <string name="cloudrecharge_cardno_prompt">充值卡号</string>
+    <string name="cloudrecharge_cardno_input_prompt">请正确输入卡号</string>
+    <string name="cloudrecharge_cardnoagain_prompt">再次输入</string>
+    <string name="cloudrecharge_cardno_inputagain_prompt">请再次输入卡号</string>
+    <string name="cloudrecharge_cardtype_prompt">充值类型</string>
+    <string name="cloudrecharge_cardtype_input_prompt">请选择充值卡类型</string>
+    <string name="cloudrecharge_money_prompt">充值金额</string>
+    <string name="cloudrecharge_paytype">支付方式</string>
+    <string name="cloudrecharge_submit">立即充值</string>
+    <string name="cloudrecharge_toast_pleaseinput">请输入卡号</string>
+    <string name="cloudrecharge_toast_pleasetwiceequals">请保持两次卡号一致</string>
+    <string name="cloudrecharge_toast_pleaseselectmoney">请选择支付金额</string>
+    <string name="cloudrecharge_toast_cardnoerror">卡号格式错误</string>
+    <string name="cloudrecharge_toast_cloud_failed">支付失败</string>
+
+    <string name="cloudrecharge_success_promot1">充值成功!</string>
+    <string name="cloudrecharge_success_promot2">点击确定按钮返回首页</string>
+    <string name="cloudrecharge_success_successbtn">确定</string>
+
+
+    <!--学生卡查询以及年审-->
+    <string name="studentcard_search_title">学籍查询</string>
+    <string name="studentcard_search_frg_search">studentcard_search_frg_search</string>
+    <string name="studentcard_search_frg_result">studentcard_search_frg_result</string>
+    <string name="studentcard_search_tosearch_titleinfo">查询信息</string>
+    <string name="studentcard_search_tosearch_namepromt">姓&#12288;&#12288;名</string>
+    <string name="studentcard_search_tosearch_idcardpromt">身份证号</string>
+    <string name="studentcard_search_tosearch_pleaseinputname">请输入姓名</string>
+    <string name="studentcard_search_tosearch_pleaseinputidcard">请输入身份证号</string>
+    <string name="studentcard_search_tosearch_btnsubmit">提交</string>
+    <string name="studentcard_search_tosearch_toast_pleaseinpoutnameandidcard">姓名与身份证号不能为空</string>
+    <string name="studentcard_search_tosearch_toast_searchfaild">查询失败</string>
+    <string name="studentcard_search_tosearch_toast_notinfo">查询不到信息</string>
+
+    <string name="studentcard_search_result_itemtitle">学籍信息</string>
+    <string name="studentcard_search_result_itemjdzz">家庭住址</string>
+    <string name="studentcard_search_result_itemsfzhm">身份证号</string>
+    <string name="studentcard_search_result_itemjg">籍&#12288;&#12288;贯</string>
+    <string name="studentcard_search_result_itemlxdh">联系电话</string>
+    <string name="studentcard_search_result_itemxb">性别</string>
+    <string name="studentcard_search_result_itemmz">民&#12288;&#12288;族</string>
+    <string name="studentcard_search_result_itemxszt">学生状态</string>
+    <string name="studentcard_search_result_itemxsxm">学生姓名</string>
+    <string name="studentcard_search_result_itemxxsbm">学校识别</string>
+    <string name="studentcard_search_result_itemxjh">学籍号码</string>
+    <string name="studentcard_search_result_itemxxmc">学校名称</string>
+    <string name="studentcard_search_result_itemspread">查看更多</string>
+    <string name="studentcard_search_result_itemshrink">收起</string>
+
+    <!--定制公交总和-->
+    <!--定制公交总入口页面-->
+    <string name="custombustotal_title">旅游公交购票</string>
+    <string name="custombustotal_tocustombusline">定制线路</string>
+    <string name="custombustotal_toquerytickets">我的车票</string>
+    <string name="custombustotal_ticketnotice_title">购票须知</string>
+    <string name="custombustotal_ticketnotice_promt">已阅读购票须知并同意协议约定</string>
+    <string name="custombustotal_ticketnotice_pleaseagree">请勾选同意</string>
+    <!--乘客信息页面-->
+    <string name="custombuspassengerinfo_title">乘客信息</string>
+    <string name="custombuspassengerinfo_add">添加新乘客</string>
+    <string name="custombuspassengerinfo_notinfo_promt">请至少添加一个乘客信息</string>
+    <string name="custombuspassengerinfo_inputname">请输入姓名</string>
+    <string name="custombuspassengerinfo_inputidcard">请输入身份证</string>
+    <string name="custombuspassengerinfo_inputphone">请输入电话号码</string>
+    <string name="custombuspassengerinfo_notinputall">请输入完整信息</string>
+    <string name="custombuspassengerinfo_repeatidcard">不能输入重复的身份证信息</string>
+    <string name="custombuspassengerinfo_idcardisthere">您输入的身份证信息已存在</string>
+    <string name="custombuspassengerinfo_idcardbracket">(%s)</string>
+    <!--定制公交查询公交与线路信息页面-->
+    <string name="custombussearchbusline_search">搜索</string>
+    <string name="custombussearchbusline_search_promt">请输入站点名称</string>
+    <string name="custombussearchbusline_recomdbusline_promt">推荐路线</string>
+    <string name="custombussearchbusline_paytickets">购票</string>
+    <!--选择公交乘次页面-->
+    <string name="custombusselectfrequency_title">班次选择</string>
+    <string name="custombusselectfrequency_selectnormalfrequency">乘车班次：</string>
+    <string name="custombusselectfrequency_selecttempofrequency">临时班次：</string>
+    <string name="custombusselectfrequency_ticketprice">票价：</string>
+    <string name="custombusselectfrequency_distance">里程：</string>
+    <string name="custombusselectfrequency_km">km</string>
+    <string name="custombusselectfrequency_next">下一步</string>
+    <string name="custombusselectfrequency_pleaseselect">请选择班次</string>
+    <string name="custombusselectfrequency_busdescriptionpromt">查看详情</string>
+    <!--选择日期页面-->
+    <string name="custombusselectdate_title">日期选择</string>
+    <string name="custombusselectdate_pleaseselect">请选择日期</string>
+    <!--订单详情-->
+    <string name="custombusorderinfo_title">订单详情</string>
+    <string name="custombusorderinfo_huimincardinfo">持惠民卡</string>
+    <string name="custombusorderinfo_selectlayer">选择层数</string>
+    <string name="custombusorderinfo_selectticketsnum">购票数量</string>
+    <string name="custombusorderinfo_selectticketsnumpromt">每单限购%s张</string>
+    <string name="custombusorderinfo_ticketprice">票价：</string>
+    <string name="custombusorderinfo_paymoney">支付金额：</string>
+    <string name="custombusorderinfo_distance">里程：</string>
+    <string name="custombusorderinfo_frequency">乘车班次：</string>
+    <string name="custombusorderinfo_date">乘车日期：</string>
+    <string name="custombusorderindo_huimincard_dialogpromt">选择惠民卡购票，上车时需要出示惠民卡,是否继续支付？</string>
+    <string name="custombusorderinfo_topay">去支付</string>
+    <string name="custombusorderinfo_notselectlayernum">请选择层数！</string>
+    <!--支付页面-->
+    <string name="custombustopay_title">支付</string>
+    <string name="custombustopay_remaintime">支付剩余时间</string>
+    <string name="custombustopay_rmb">¥&#12288;</string>
+    <string name="custombustopay_paytypepromt">支付方式</string>
+    <string name="custombustopay_btntopay">立即支付</string>
+    <string name="custombustopay_overtime">您的订单已经超时</string>
+    <string name="custombustopay_back">如果退出此订单将会失效</string>
+    <string name="custombustopay_layer">车层：</string>
+    <string name="custombustopay_seat">座位号：</string>
+    <string name="custombustopay_layerandseat">%s层%s座</string>
+    <!--我的订单页面-->
+    <string name="custombusquerytickets_title">我的订单</string>
+    <string name="custombusquerytickets_frequency">乘车班次：</string>
+    <string name="custombusquerytickets_date">乘车日期：</string>
+    <string name="custombusquerytickets_checkmoreinfo">查看详情</string>
+    <!--车票详情页面-->
+    <string name="custombusticketinfo_title">车票详情</string>
+    <string name="custombusticketinfo_frequency">乘车班次：</string>
+    <string name="custombusticketinfo_date">乘车日期：</string>
+    <string name="custombusticketinfo_ticketprice">普通票价：</string>
+    <string name="custombusticketinfo_huimincardprice">惠民卡票价：</string>
+    <string name="custombusticketinfo_paymoney">实付金额：</string>
+    <string name="custombusticketinfo_seat">座</string>
+    <string name="custombusticketinfo_layer">层</string>
+    <string name="custombusticketinfo_layerandseat">座位信息：</string>
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/common_background_gray">
+    <include layout="@layout/layout_titlebar"/>
+    <include layout="@layout/layout_consumrecords_typeselect"/>
+    <ListView
+        android:id="@+id/lv_records"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+    <RelativeLayout
+        android:id="@+id/rl_notrecord"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/iv_notrecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/aty_consumrecords_notrecord"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:textSize="13dp"
+            android:textColor="@color/comon_text_black_less"
+            android:text="@string/consumrecords_item_nomore"
+            android:layout_below="@id/iv_notrecord"
+            android:layout_marginTop="10dp"
+            android:gravity="center"/>
+    </RelativeLayout>
+</LinearLayout>

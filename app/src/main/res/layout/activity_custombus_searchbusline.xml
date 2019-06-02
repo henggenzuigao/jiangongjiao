@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/common_background_gray">
+    <include layout="@layout/layout_custombus_searchbusline_top"/>
+    <TextView
+        android:id="@+id/tv_promt"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="@string/custombussearchbusline_recomdbusline_promt"
+        android:textSize="12dp"
+        android:textColor="@color/comon_text_black_less"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

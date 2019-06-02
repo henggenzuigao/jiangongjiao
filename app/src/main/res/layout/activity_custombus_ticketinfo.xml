@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <include layout="@layout/layout_titlebar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/app_theme"/>
+        <include layout="@layout/layout_custombus_ticketinfo_whitecard" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_siteinfo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="62dp"
+                    android:layout_height="29dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/shape_aty_custombusticketinfo_infopromtbackground"
+                    android:layout_marginTop="20dp"
+                    android:textSize="12dp"
+                    android:textColor="@color/app_theme"
+                    android:text="车票信息"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/tv_layerandseat"
+                    style="@style/aty_custombusticketinfo_text"
+                    android:text="@string/custombusticketinfo_layerandseat"/>
+                <!--<TextView
+                    android:id="@+id/tv_seat"
+                    style="@style/aty_custombusticketinfo_text"
+                    android:text="@string/custombusticketinfo_seat"/>-->
+                <TextView
+                    android:id="@+id/tv_frequency"
+                    style="@style/aty_custombusticketinfo_text"
+                    android:text="@string/custombusticketinfo_frequency"/>
+                <TextView
+                    android:id="@+id/tv_date"
+                    style="@style/aty_custombusticketinfo_text"
+                    android:text="@string/custombusticketinfo_date"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        style="@style/aty_custombusticketinfo_text"
+                        android:text="@string/custombusticketinfo_paymoney"/>
+                    <TextView
+                        android:id="@+id/tv_paymoney"
+                        style="@style/aty_custombusticketinfo_text"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="@color/app_theme"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        style="@style/aty_custombusticketinfo_text"
+                        android:text="@string/custombusticketinfo_ticketprice"/>
+                    <TextView
+                        android:id="@+id/tv_ticketprice"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="@color/app_theme"
+                        style="@style/aty_custombusticketinfo_text" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        style="@style/aty_custombusticketinfo_text"
+                        android:text="@string/custombusticketinfo_huimincardprice"/>
+                    <TextView
+                        android:id="@+id/tv_huimincardprice"
+                        style="@style/aty_custombusticketinfo_text"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="@color/app_theme"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</LinearLayout>

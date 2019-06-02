@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.whpe.qrcode.jiangxi_jian">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--在SDCard中创建与删除文件权限  -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:name=".GYDZApplication">
+        <activity android:name=".activity.ActivityMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ActivityMypurse"/>
+        <activity android:name=".activity.ActivityPayPurse"/>
+        <activity android:name=".activity.ActivityConsumrecords"/>
+        <activity android:name=".activity.ActivitySettings"/>
+        <activity android:name=".activity.ActivityQrcode"/>
+        <activity android:name=".activity.ActivityUsehelp"/>
+        <activity android:name=".activity.ActivityLogin"/>
+        <activity android:name=".activity.ActivityPayWeb"/>
+        <activity android:name=".activity.ActivitySeniorCardRefund"/>
+        <activity android:name=".activity.ActivityNewsWeb"/>
+        <activity android:name=".activity.ActivityTitleWeb"/>
+        <activity android:name=".activity.ActivityAboutUs"/>
+        <activity android:name=".activity.ActivityCloudRechargeCard"/>
+        <activity android:name=".activity.ActivityStudentCardSearch"/>
+        <activity android:name=".activity.ActivityCustomBusTotal"/>
+        <activity android:name=".activity.ActivityNewsAndAdvertiseWeb"/>
+        <activity android:name=".activity.custombus.ActivityCustomBusSearchBusline"/>
+        <activity android:name=".activity.custombus.ActivityCustomBusQueryTicket"/>
+        <activity android:name=".activity.custombus.ActivityCustomBusSelectFrequency"/>
+        <activity android:name=".activity.custombus.ActivityCustomBusSelectDate"/>
+        <activity android:name=".activity.custombus.ActivityCustomBusOrderInfo"/>
+        <activity android:name=".activity.custombus.ActivityCustomBusToPay"/>
+        <activity android:name=".activity.custombus.ActivityCustomBusTicketInfo"/>
+        <activity android:name=".activity.custombus.ActivityCustomBusPassengerInfo"/>
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.unionpay.UPPayWapActivity"
+            android:configChanges="orientation|keyboardHidden|fontScale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.whpe.qrcode.jiangxi_jian.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepath" />
+        </provider>
+    </application>
+
+</manifest>
