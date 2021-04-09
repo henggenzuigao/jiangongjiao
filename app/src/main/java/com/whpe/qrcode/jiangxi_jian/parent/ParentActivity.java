@@ -573,6 +573,7 @@ public abstract class ParentActivity extends AppCompatActivity implements LoadQr
 
     @Override
     public void onLoadqrcodeparamFaild(String resmsg) {
+        Log.e("YC","错误="+resmsg);
         dissmissProgress();
         showExceptionAlertDialog(getString(R.string.app_loading_qrparam_false));
     }

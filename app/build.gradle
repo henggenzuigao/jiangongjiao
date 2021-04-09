@@ -75,9 +75,9 @@ dependencies {
     implementation 'com.github.LinweiJ:ViewPagerIndicator:0.1.0'
     // 添加下面的内容
     implementation(name: 'alipaySdk-15.5.9-20181123210601', ext: 'aar')
-    implementation files('libs/AppServe_JiangXiJiAnTest.jar')
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+    implementation files('libs\\AppServe_JiangXiJiAn.jar')
 
 }

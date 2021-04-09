@@ -54,7 +54,6 @@
 # platform version.  We know about them, and they are safe.
 -dontwarn android.support.**
 -keep class android.support.**{*;}
--keep class android.support.**{*;}
 
 
 -keep interface android.support.**{*;}
