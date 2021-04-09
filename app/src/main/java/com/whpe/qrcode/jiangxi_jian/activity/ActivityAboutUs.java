@@ -37,6 +37,7 @@ public class ActivityAboutUs extends NormalTitleActivity implements View.OnClick
         Log.e("a","我可以12333");
         Log.e("a","再来个分支11111");
         //startssssssssssssssssssssss
+        //okletsgo
 
         setContentView(R.layout.activity_aboutus);
     }
