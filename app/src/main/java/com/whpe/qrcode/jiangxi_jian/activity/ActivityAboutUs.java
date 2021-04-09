@@ -34,7 +34,7 @@ public class ActivityAboutUs extends NormalTitleActivity implements View.OnClick
     @Override
     protected void setActivityLayout() {
         super.setActivityLayout();
-        Log.e("a","我可以12");
+        Log.e("a","我可以12333");
         setContentView(R.layout.activity_aboutus);
     }
 
