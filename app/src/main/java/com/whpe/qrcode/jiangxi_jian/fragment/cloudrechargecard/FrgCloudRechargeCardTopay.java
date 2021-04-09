@@ -1,14 +1,8 @@
 package com.whpe.qrcode.jiangxi_jian.fragment.cloudrechargecard;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +11,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ListView;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.whpe.qrcode.jiangxi_jian.R;
 import com.whpe.qrcode.jiangxi_jian.activity.ActivityCloudRechargeCard;
@@ -29,8 +26,6 @@ import com.whpe.qrcode.jiangxi_jian.net.getbean.LoadQrcodeParamBean;
 import com.whpe.qrcode.jiangxi_jian.net.getbean.payunity.AlipayBean;
 import com.whpe.qrcode.jiangxi_jian.net.getbean.payunity.UnionBean;
 import com.whpe.qrcode.jiangxi_jian.net.getbean.payunity.WeichatBean;
-import com.whpe.qrcode.jiangxi_jian.parent.ParentActivity;
-import com.whpe.qrcode.jiangxi_jian.toolbean.PaytypePrepayBean;
 import com.whpe.qrcode.jiangxi_jian.toolbean.PaytypeRechargeCardBean;
 import com.whpe.qrcode.jiangxi_jian.view.adapter.MoneyGridRechargeCardAdapter;
 import com.whpe.qrcode.jiangxi_jian.view.adapter.RechargeCardPaytypeLvAdapter;

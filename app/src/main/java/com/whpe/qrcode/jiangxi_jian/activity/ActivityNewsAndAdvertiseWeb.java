@@ -5,7 +5,6 @@ import android.graphics.Bitmap;
 import android.net.http.SslError;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -17,6 +16,8 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
 
 import com.squareup.picasso.MemoryPolicy;
 import com.squareup.picasso.NetworkPolicy;
@@ -120,7 +121,7 @@ public class ActivityNewsAndAdvertiseWeb extends NormalTitleActivity implements 
     @Override
     protected void onCreatebindView() {
         super.onCreatebindView();
-        wv = findViewById(R.id.wv);
+        wv = (ProgressWebView) findViewById(R.id.wv);
         tv_title = (TextView)findViewById(R.id.tv_title);
         iv_info = (ImageView)findViewById(R.id.iv_info);
     }

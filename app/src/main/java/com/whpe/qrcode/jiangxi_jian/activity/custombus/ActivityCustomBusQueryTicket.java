@@ -1,25 +1,22 @@
 package com.whpe.qrcode.jiangxi_jian.activity.custombus;
 
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.OrientationHelper;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.OrientationHelper;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.whpe.qrcode.jiangxi_jian.R;
 import com.whpe.qrcode.jiangxi_jian.bigtools.DateUtils;
 import com.whpe.qrcode.jiangxi_jian.bigtools.GlobalConfig;
 import com.whpe.qrcode.jiangxi_jian.net.JsonComomUtils;
 import com.whpe.qrcode.jiangxi_jian.net.action.cusbtombus.QueryUserTicketInfoAction;
-import com.whpe.qrcode.jiangxi_jian.net.getbean.custombus.GetGenerateTicketOrderInfoBean;
 import com.whpe.qrcode.jiangxi_jian.net.getbean.custombus.GetQueryUserTicketInfoBean;
 import com.whpe.qrcode.jiangxi_jian.parent.NormalTitleActivity;
-import com.whpe.qrcode.jiangxi_jian.toolbean.custombus.BusLineInfoShowBean;
 import com.whpe.qrcode.jiangxi_jian.toolbean.custombus.BusTicketShowBean;
 import com.whpe.qrcode.jiangxi_jian.view.adapter.CustomBusQueryTicketRlAdapter;
-import com.whpe.qrcode.jiangxi_jian.view.adapter.CustomBusSearchBuslineRlAdapter;
 import com.whpe.qrcode.jiangxi_jian.view.adapter.holder.CustombusQueryticketsRlHolder;
-import com.whpe.qrcode.jiangxi_jian.view.adapter.holder.CustombusSearchBuslineRlHolder;
 
 import java.util.ArrayList;
 
@@ -86,7 +83,7 @@ public class ActivityCustomBusQueryTicket extends NormalTitleActivity implements
         //设置布局管理器
         rl_content.setLayoutManager(layoutManager);
         //设置为垂直布局，这也是默认的
-        layoutManager.setOrientation(OrientationHelper.VERTICAL);
+        layoutManager.setOrientation(RecyclerView.VERTICAL);
         //设置Adapter
         customBusQueryTicketRlAdapter = new CustomBusQueryTicketRlAdapter(this);
         rl_content.setAdapter(customBusQueryTicketRlAdapter);

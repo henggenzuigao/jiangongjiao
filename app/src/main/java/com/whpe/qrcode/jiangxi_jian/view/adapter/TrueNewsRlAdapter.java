@@ -2,11 +2,12 @@ package com.whpe.qrcode.jiangxi_jian.view.adapter;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
-import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.MemoryPolicy;
 import com.squareup.picasso.NetworkPolicy;
@@ -15,7 +16,6 @@ import com.whpe.qrcode.jiangxi_jian.R;
 import com.whpe.qrcode.jiangxi_jian.bigtools.MyDrawableUtils;
 import com.whpe.qrcode.jiangxi_jian.toolbean.TrueNewsBean;
 import com.whpe.qrcode.jiangxi_jian.view.adapter.holder.TrueNewsRlHolder;
-
 
 import java.util.ArrayList;
 

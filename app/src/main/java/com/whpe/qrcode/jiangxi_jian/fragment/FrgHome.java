@@ -4,19 +4,19 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.OrientationHelper;
-import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.OrientationHelper;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import androidx.viewpager.widget.ViewPager;
 
 import com.lwj.widget.viewpagerindicator.ViewPagerIndicator;
 import com.tomyang.whpe.qrcode.bean.ack.QueryNewsListAckBody;
@@ -28,11 +28,9 @@ import com.whpe.qrcode.jiangxi_jian.activity.ActivityLogin;
 import com.whpe.qrcode.jiangxi_jian.activity.ActivityMain;
 import com.whpe.qrcode.jiangxi_jian.activity.ActivityMypurse;
 import com.whpe.qrcode.jiangxi_jian.activity.ActivityNewsAndAdvertiseWeb;
-import com.whpe.qrcode.jiangxi_jian.activity.ActivityNewsWeb;
 import com.whpe.qrcode.jiangxi_jian.activity.ActivityStudentCardSearch;
 import com.whpe.qrcode.jiangxi_jian.activity.ActivityTitleWeb;
 import com.whpe.qrcode.jiangxi_jian.bigtools.GlobalConfig;
-import com.whpe.qrcode.jiangxi_jian.bigtools.RechargeCardError;
 import com.whpe.qrcode.jiangxi_jian.bigtools.ToastUtils;
 import com.whpe.qrcode.jiangxi_jian.net.action.ShowNewsContentListAction;
 import com.whpe.qrcode.jiangxi_jian.net.action.ShowTopCardContentListAction;
@@ -41,7 +39,6 @@ import com.whpe.qrcode.jiangxi_jian.toolbean.TrueNewsBean;
 import com.whpe.qrcode.jiangxi_jian.view.adapter.FakeNewsRlAdapter;
 import com.whpe.qrcode.jiangxi_jian.view.adapter.HomeTopPagerAdapter;
 import com.whpe.qrcode.jiangxi_jian.view.adapter.TrueNewsRlAdapter;
-import com.whpe.qrcode.jiangxi_jian.view.adapter.holder.NewsRlHolder;
 import com.whpe.qrcode.jiangxi_jian.view.adapter.holder.TrueNewsRlHolder;
 
 import java.util.ArrayList;
@@ -198,7 +195,7 @@ public class FrgHome extends Fragment implements View.OnClickListener, ShowNewsC
         //设置布局管理器
         rl_news.setLayoutManager(layoutManager);
         //设置为垂直布局，这也是默认的
-        layoutManager.setOrientation(OrientationHelper.VERTICAL);
+        layoutManager.setOrientation(RecyclerView.VERTICAL);
         rl_news.setNestedScrollingEnabled(false);
         //设置Adapter
         trueNewsRlAdapter = new TrueNewsRlAdapter(activity);

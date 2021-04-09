@@ -6,10 +6,11 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Typeface;
-import android.support.annotation.ColorInt;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
+
+import androidx.annotation.ColorInt;
+import androidx.annotation.Nullable;
 
 import com.whpe.qrcode.jiangxi_jian.R;
 

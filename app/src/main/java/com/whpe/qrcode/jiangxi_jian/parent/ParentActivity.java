@@ -14,14 +14,16 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.annotation.NonNull;
-import android.support.v4.content.FileProvider;
-import android.support.v7.app.AppCompatActivity;
+
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.FileProvider;
 
 import com.android.tu.loadingdialog.LoadingDailog;
 import com.whpe.qrcode.jiangxi_jian.GYDZApplication;
@@ -257,7 +259,7 @@ public abstract class ParentActivity extends AppCompatActivity implements LoadQr
 
     protected void setTitle(String title){
         if(tv_title==null){
-            tv_title = findViewById(R.id.tv_title);
+            tv_title = (TextView) findViewById(R.id.tv_title);
         }
         tv_title.setText(title);
     }

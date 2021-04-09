@@ -1,13 +1,13 @@
 package com.whpe.qrcode.jiangxi_jian.activity.custombus;
 
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.OrientationHelper;
-import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.whpe.qrcode.jiangxi_jian.R;
 import com.whpe.qrcode.jiangxi_jian.bigtools.GlobalConfig;
@@ -77,7 +77,7 @@ public class ActivityCustomBusSearchBusline extends NormalNoTitleActivity implem
         //设置布局管理器
         rl_content.setLayoutManager(layoutManager);
         //设置为垂直布局，这也是默认的
-        layoutManager.setOrientation(OrientationHelper.VERTICAL);
+        layoutManager.setOrientation(RecyclerView.VERTICAL);
         //设置Adapter
         customBusSearchBuslineRlAdapter = new CustomBusSearchBuslineRlAdapter(this);
         rl_content.setAdapter(customBusSearchBuslineRlAdapter);

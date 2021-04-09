@@ -2,10 +2,11 @@ package com.whpe.qrcode.jiangxi_jian.view.adapter;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.viewpager.widget.PagerAdapter;
 
 import com.squareup.picasso.Picasso;
 import com.tomyang.whpe.qrcode.bean.ack.QueryNewsListItem;

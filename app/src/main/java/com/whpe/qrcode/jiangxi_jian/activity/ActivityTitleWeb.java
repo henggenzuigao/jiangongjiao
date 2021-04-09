@@ -52,7 +52,7 @@ public class ActivityTitleWeb extends NormalTitleActivity {
     @Override
     protected void onCreatebindView() {
         super.onCreatebindView();
-        wv = findViewById(R.id.wv);
+        wv = (ProgressWebView) findViewById(R.id.wv);
     }
 
     private void initWebview() {

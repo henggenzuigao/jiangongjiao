@@ -29,8 +29,8 @@
             android:text="新闻资讯"
             android:layout_marginLeft="22dp"/>
     </RelativeLayout>
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rl_news"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
 </LinearLayout>

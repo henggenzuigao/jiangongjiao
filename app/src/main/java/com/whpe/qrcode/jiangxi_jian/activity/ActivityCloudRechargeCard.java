@@ -3,32 +3,19 @@ package com.whpe.qrcode.jiangxi_jian.activity;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v4.app.FragmentTransaction;
-import android.text.TextUtils;
-import android.util.Log;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.GridView;
-import android.widget.ListView;
 
+import androidx.fragment.app.FragmentTransaction;
 
 import com.whpe.qrcode.jiangxi_jian.R;
 import com.whpe.qrcode.jiangxi_jian.bigtools.GlobalConfig;
 import com.whpe.qrcode.jiangxi_jian.bigtools.ToastUtils;
 import com.whpe.qrcode.jiangxi_jian.fragment.cloudrechargecard.FrgCloudRechargeCardSuccess;
 import com.whpe.qrcode.jiangxi_jian.fragment.cloudrechargecard.FrgCloudRechargeCardTopay;
-import com.whpe.qrcode.jiangxi_jian.fragment.seniorcardrefund.FrgSeniorCardQueryBalance;
-import com.whpe.qrcode.jiangxi_jian.fragment.seniorcardrefund.FrgSeniorCardRefund;
 import com.whpe.qrcode.jiangxi_jian.net.JsonComomUtils;
 import com.whpe.qrcode.jiangxi_jian.net.action.QueryOrderPayAction;
 import com.whpe.qrcode.jiangxi_jian.net.getbean.GetOrderPayBean;
 import com.whpe.qrcode.jiangxi_jian.net.getbean.LoadQrcodeParamBean;
-import com.whpe.qrcode.jiangxi_jian.net.getbean.QrcodeStatusBean;
 import com.whpe.qrcode.jiangxi_jian.parent.NormalTitleActivity;
-import com.whpe.qrcode.jiangxi_jian.toolbean.PaytypeRechargeCardBean;
-import com.whpe.qrcode.jiangxi_jian.view.adapter.MoneyGridRechargeCardAdapter;
-import com.whpe.qrcode.jiangxi_jian.view.adapter.RechargeCardPaytypeLvAdapter;
 
 import java.util.ArrayList;
 

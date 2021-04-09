@@ -3,13 +3,14 @@ package com.whpe.qrcode.jiangxi_jian.activity;
 import android.content.Context;
 import android.net.http.SslError;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.webkit.SslErrorHandler;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
 
 import com.whpe.qrcode.jiangxi_jian.R;
 import com.whpe.qrcode.jiangxi_jian.parent.NormalTitleActivity;
@@ -98,7 +99,7 @@ public class ActivityNewsWeb extends NormalTitleActivity {
     @Override
     protected void onCreatebindView() {
         super.onCreatebindView();
-        wv = findViewById(R.id.wv);
+        wv = (ProgressWebView) findViewById(R.id.wv);
         tv_title = (TextView)findViewById(R.id.tv_title);
     }
 }

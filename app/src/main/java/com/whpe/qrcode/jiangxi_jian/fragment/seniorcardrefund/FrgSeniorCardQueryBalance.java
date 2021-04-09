@@ -2,8 +2,6 @@ package com.whpe.qrcode.jiangxi_jian.fragment.seniorcardrefund;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +9,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.tomyang.whpe.seniorscardrefund.bean.QueryBean;
 import com.whpe.qrcode.jiangxi_jian.R;

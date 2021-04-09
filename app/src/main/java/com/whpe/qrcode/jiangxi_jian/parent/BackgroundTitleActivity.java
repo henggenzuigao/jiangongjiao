@@ -17,7 +17,7 @@ public class BackgroundTitleActivity extends ParentActivity {
 
     @Override
     protected void afterLayout() {
-        rl_title = findViewById(R.id.rl_title);
+        rl_title = (RelativeLayout) findViewById(R.id.rl_title);
         int result = 0;
         int resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
         if (resourceId > 0) {
@@ -49,7 +49,7 @@ public class BackgroundTitleActivity extends ParentActivity {
 
     protected void setMyTitleColor(int color){
         if(rl_title==null){
-            rl_title = findViewById(R.id.rl_title);
+            rl_title = (RelativeLayout) findViewById(R.id.rl_title);
         }
         rl_title.setBackgroundColor(MyDrawableUtils.getColor(this,color));
     }

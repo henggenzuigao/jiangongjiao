@@ -19,8 +19,8 @@ public class GlobalConfig {
     //public static final String APP_GW_FUNCTION_URL="http://43.241.232.24:8080/AppServerWhpe/";
     //public static final String APP_GW_FUNCTION_URL="http://43.241.237.88:80/AppServerWhpe/";
     //域名端口
-    //public static final String APP_GW_FUNCTION_URL="http://test-mobileqrcode.ymdx.cn/AppServerWhpe/";
-    public static final String APP_GW_FUNCTION_URL="http://mobileqrcode.ymdx.cn/AppServerWhpe/";
+    public static final String APP_GW_FUNCTION_URL="http://test-mobileqrcode.ymdx.cn/AppServerWhpe/";
+    //public static final String APP_GW_FUNCTION_URL="http://mobileqrcode.ymdx.cn/AppServerWhpe/";
 
     /*
      *app名字

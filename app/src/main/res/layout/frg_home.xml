@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.SwipeRefreshLayout
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app = "http://schemas.android.com/apk/res-auto"
     android:id="@+id/srl_refresh"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white">
@@ -37,11 +37,11 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="142dp">
-                    <android.support.v4.view.ViewPager
+                    <androidx.viewpager.widget.ViewPager
                         android:id="@+id/vp_top"
                         android:layout_width="match_parent"
                         android:layout_height="142dp">
-                    </android.support.v4.view.ViewPager>
+                    </androidx.viewpager.widget.ViewPager>
                     <com.lwj.widget.viewpagerindicator.ViewPagerIndicator
                         android:id="@+id/indicator_line"
                         android:layout_width="match_parent"
@@ -98,5 +98,5 @@
             </LinearLayout>
             <include layout="@layout/layout_frg_home_news"/>
         </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
-</android.support.v4.widget.SwipeRefreshLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

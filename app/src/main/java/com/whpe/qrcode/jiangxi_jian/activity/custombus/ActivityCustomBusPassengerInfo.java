@@ -1,6 +1,7 @@
 package com.whpe.qrcode.jiangxi_jian.activity.custombus;
 
-import android.support.v4.app.FragmentTransaction;
+
+import androidx.fragment.app.FragmentTransaction;
 
 import com.whpe.qrcode.jiangxi_jian.R;
 import com.whpe.qrcode.jiangxi_jian.bigtools.MyDrawableUtils;

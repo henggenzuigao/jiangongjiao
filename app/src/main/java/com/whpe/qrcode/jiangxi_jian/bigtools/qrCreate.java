@@ -6,8 +6,9 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.DrawableRes;
+import androidx.annotation.NonNull;
 
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.EncodeHintType;
@@ -103,7 +104,7 @@ public class qrCreate {
 		Canvas canvas = new Canvas(withlogo);
 //		canvas.drawBitmap(QRbitmap,0,0 ,null);
 		canvas.drawBitmap(logoc, QRw/2 - logoc.getWidth()/2, QRh/2 - logoc.getHeight()/2 ,  null);
-		canvas.save(Canvas.ALL_SAVE_FLAG);
+		canvas.save();
 		canvas.restore();
 		return withlogo;
 	}

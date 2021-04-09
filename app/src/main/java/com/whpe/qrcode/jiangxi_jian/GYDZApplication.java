@@ -2,6 +2,9 @@ package com.whpe.qrcode.jiangxi_jian;
 
 import android.app.Activity;
 import android.app.Application;
+import android.content.Context;
+
+import androidx.multidex.MultiDex;
 
 import com.whpe.qrcode.jiangxi_jian.activity.custombus.ActivityCustomBusOrderInfo;
 import com.whpe.qrcode.jiangxi_jian.activity.custombus.ActivityCustomBusSearchBusline;
@@ -23,6 +26,11 @@ public class GYDZApplication extends Application {
     public void onCreate() {
         super.onCreate();
         mIntanse = this;
+    }
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(base);
     }
 
 

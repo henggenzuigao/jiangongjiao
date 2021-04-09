@@ -1,10 +1,11 @@
 package com.whpe.qrcode.jiangxi_jian.view.adapter;
 
 import android.app.Activity;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.whpe.qrcode.jiangxi_jian.R;
 import com.whpe.qrcode.jiangxi_jian.bigtools.BigUtils;
