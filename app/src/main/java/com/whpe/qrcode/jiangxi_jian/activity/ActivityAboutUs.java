@@ -35,6 +35,8 @@ public class ActivityAboutUs extends NormalTitleActivity implements View.OnClick
     protected void setActivityLayout() {
         super.setActivityLayout();
         Log.e("a","我可以12333");
+        Log.e("a","再来个分支11111");
+
         setContentView(R.layout.activity_aboutus);
     }
 
